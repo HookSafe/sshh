@@ -1,0 +1,52 @@
+{
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 443,
+      "protocol": "vless",
+      "settings": {
+        "udp": false,
+        "clients": [
+          {
+            "id": "bigdata.icu",
+            "alterId": 0,
+            "email": "t@t.tt",
+            "flow": "xtls-rprx-vision"
+          }
+        ],
+        "decryption": "none",
+        "allowTransparent": false
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "images.apple.com",
+          "fingerprint": "chrome",
+          "show": false,
+          "publicKey": "yJ6YYtxTZn4mnN3h8UgHGTP6MqGYYlPQZwV8bMU8EXM",
+          "shortId": "a48c7c61d0093fee",
+          "spiderX": ""
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {}
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": []
+  }
+}
